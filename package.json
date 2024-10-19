@@ -8,8 +8,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "test": "node --experimental-vm-modules --env-file=.env --trace-warnings node_modules/.bin/jest",
-    "test:coverage": "node --experimental-vm-modules --env-file=.env --trace-warnings node_modules/.bin/jest --coverage",
+    "test": "npx cross-env NODE_OPTIONS=\"${NODE_OPTIONS} --experimental-vm-modules --trace-warnings\" jest",
+    "test:coverage": "npx cross-env NODE_OPTIONS=\"${NODE_OPTIONS} --experimental-vm-modules --trace-warnings\" jest --coverage",
     "lint": "eslint **/*.js",
     "build": "webpack",
     "start:dev": "nodemon",

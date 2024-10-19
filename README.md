@@ -6,7 +6,7 @@ This is the implementation of the simple CRUD API web server which uses in-memor
 
 ### Requirements
 
-The assumption is that **node** `v22.9.0` is used.
+The assumption is that **node** `^22.9.0` is used.
 
 ### Installation
 
