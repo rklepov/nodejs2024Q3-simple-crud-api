@@ -126,6 +126,6 @@ async function main(argv, env) {
   }
 }
 
-export { main };
+export { main, Server };
 
 //__EOF__

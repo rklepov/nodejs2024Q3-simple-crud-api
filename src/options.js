@@ -6,27 +6,27 @@ import { Exception } from './except.js';
 
 // Exceptions //////////////////////////////////////////////////////////////////
 
-class CLIException extends Exception {}
+export class CLIException extends Exception {}
 
-class InvalidOption extends CLIException {
+export class InvalidOption extends CLIException {
   constructor(opt) {
     super(`the following option is unexpected: '${opt}'`);
   }
 }
 
-class DuplicateOption extends CLIException {
+export class DuplicateOption extends CLIException {
   constructor(opt) {
     super(`the following option is duplicated: '${opt}'`);
   }
 }
 
-class MissingOptionValue extends CLIException {
+export class MissingOptionValue extends CLIException {
   constructor(opt) {
     super(`the following option(s) are missing value(s): [${opt}]`);
   }
 }
 
-class InvalidOptionValue extends CLIException {
+export class InvalidOptionValue extends CLIException {
   constructor(opt, val) {
     super(`the value of '${opt}' is invalid: '${val}'`);
   }
@@ -41,7 +41,7 @@ const DEFAULT_SERVER_PORT = 3000;
  * hardcoded options specific for the task.
  * (just a single option in fact here so far - the server port number)
  */
-class Options {
+export class Options {
   #serverPort = null;
 
   constructor(argv, env) {
@@ -108,7 +108,7 @@ class Options {
   }
 }
 
-export {
+export default {
   CLIException,
   DuplicateOption,
   InvalidOption,
