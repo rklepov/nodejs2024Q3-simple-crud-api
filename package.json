@@ -1,0 +1,38 @@
+{
+  "name": "nodejs2024q3-simple-crud-api",
+  "version": "1.0.0",
+  "description": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/crud-api/assignment.md",
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rklepov/nodejs2024Q3-simple-crud-api.git"
+  },
+  "author": "Roman Klepov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rklepov/nodejs2024Q3-simple-crud-api/issues"
+  },
+  "homepage": "https://github.com/rklepov/nodejs2024Q3-simple-crud-api#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^28.8.3",
+    "eslint-plugin-n": "^17.11.1",
+    "eslint-plugin-promise": "^7.1.0",
+    "globals": "^15.11.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
