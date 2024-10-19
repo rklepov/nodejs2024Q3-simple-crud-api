@@ -10,7 +10,9 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint **/*.js",
-    "start:dev": "nodemon"
+    "build": "webpack",
+    "start:dev": "nodemon",
+    "start:prod": "npm run build && node --env-file=.env dist/server.cjs"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   "homepage": "https://github.com/rklepov/nodejs2024Q3-simple-crud-api#readme",
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
